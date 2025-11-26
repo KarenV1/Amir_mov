@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             achieve_pubs: "50+ Publicaciones",
             achieve_students: "1000+ Estudiantes Capacitados",
             achieve_projects: "20+ Proyectos Activos",
-            founder_role: "Fundadora y Científica Principal",
+            founder_role: "Fundador y Científico Principal",
             services_title: "Nuestros Servicios",
             services_subtitle: "Soluciones integrales para la comunidad científica.",
             service_1_title: "Biotecnología Vegetal",
@@ -382,17 +382,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     VANTA.CELLS({
-  el: "#hero",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  color1: 0x8c8c,
-  color2: 0xf2e735,
-  size: 1.5,
-  speed: 1
-})
+        el: "#hero",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        color1: 0x8c8c,
+        color2: 0xf2e735,
+        size: 1.5,
+        speed: 1
+    })
 
 });
