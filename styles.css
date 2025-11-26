@@ -267,7 +267,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image:transparent; 
+    background-image: transparent;
     /* var(--hero-bg); */
     background-size: cover;
     background-position: center;
@@ -1135,25 +1135,24 @@ img {
 }
 
 #vanta-layer {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 #vanta-layer {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 }
 
 .hero-content,
 .hero-floating-cards {
-  position: relative;
-  z-index: 5;
+    position: relative;
+    z-index: 5;
 }
-
