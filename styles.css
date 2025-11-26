@@ -184,6 +184,31 @@ img {
     color: var(--white);
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.logo-container:hover {
+    opacity: 0.8;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
 .nav-links {
     display: flex;
     gap: 25px;
@@ -238,19 +263,17 @@ img {
 /* HERO SECTION - UPDATED */
 .hero-section {
     position: relative;
-    height: 100vh;
-    min-height: 600px;
-    /* Adjusted for mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image:transparent; 
     /* var(--hero-bg); */
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 1;
-    padding: 120px 20px 100px;
-    margin-top: 0;
+    padding: 100px 20px 60px;
+    min-height: auto;
 }
 
 .hero-overlay {
@@ -267,6 +290,9 @@ img {
 .hero-content {
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-text-block {
@@ -307,13 +333,11 @@ img {
 
 /* FLOATING CARDS - UPDATED */
 .hero-floating-cards {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    transform: translateY(40%);
-    /* Adjusted overlap */
     z-index: 10;
+    padding: 60px 0 0 0;
+    background: transparent;
 }
 
 .cards-wrapper {
@@ -642,7 +666,7 @@ img {
 }
 
 .contact-form-container {
-    padding: 40px;
+    padding: 60px 40px;
     background: var(--white);
 }
 
@@ -681,6 +705,73 @@ img {
 
 .form-group.error .error-msg {
     display: block;
+}
+
+/* CONTACT INFO SECTION */
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 40px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: var(--bg-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: var(--primary-green);
+    min-width: 50px;
+    text-align: center;
+}
+
+.contact-item div {
+    text-align: left;
+}
+
+.contact-label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-value {
+    font-size: 1.1rem;
+    color: var(--primary-blue);
+    font-weight: 600;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.contact-value:hover {
+    color: var(--primary-green);
 }
 
 .map-container {
@@ -793,7 +884,7 @@ img {
     }
 
     .hero-section {
-        padding: 140px 20px 90px;
+        padding: 100px 20px 40px;
     }
 
     .hero-text-block h1 {
@@ -801,6 +892,11 @@ img {
     }
 
     .hero-buttons {
+        gap: 10px;
+    }
+
+    .cards-wrapper {
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 
@@ -853,9 +949,8 @@ img {
     }
 
     .hero-section {
-        min-height: 520px;
-        padding: 100px 15px 80px;
-        margin-top: 0;
+        padding: 100px 15px 40px;
+        min-height: auto;
     }
 
     .hero-text-block h1 {
@@ -887,7 +982,7 @@ img {
     .hero-floating-cards {
         position: relative;
         transform: none;
-        background: var(--bg-light);
+        background: transparent;
         padding: 30px 0;
     }
 
@@ -910,6 +1005,33 @@ img {
 
     .section-header {
         margin-bottom: 40px;
+    }
+
+    .contact-form-container {
+        padding: 30px 20px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+    }
+
+    .contact-details {
+        gap: 20px;
+    }
+
+    .contact-item {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-item i {
+        min-width: auto;
+    }
+
+    .contact-item div {
+        text-align: center;
     }
 
     .qa-buttons {
@@ -940,7 +1062,8 @@ img {
     }
 
     .lang-switcher {
-        display: none;
+        display: inline-block;
+        font-size: 0.75rem;
     }
 
     .hero-section {
