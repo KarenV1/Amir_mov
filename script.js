@@ -391,6 +391,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+
+
+
+
+
+
+
+
+
     VANTA.CELLS({
         el: "#hero",
         mouseControls: true,
@@ -406,3 +415,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 });
+
+
+
